@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -18,6 +19,7 @@ public class MainApp extends Application {
         this.primaryStage.setTitle("Running Button");
         this.primaryStage.setMinHeight(200);
         this.primaryStage.setMinWidth(200);
+        this.primaryStage.initStyle(StageStyle.UNDECORATED);
 
         showWindow();
     }
